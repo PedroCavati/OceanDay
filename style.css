@@ -1,0 +1,76 @@
+body {
+    background-color: #4F42B5;
+}
+
+@font-face {
+    font-family: "SuperOcean";
+    src: url("fonts/SuperOcean.ttf") format("truetype");
+}
+
+.logoContainer {
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 40vh 0 40vh;
+    align-items: center;
+}
+
+.navbar__item {
+    font-family: SuperOcean;
+    font-size: 25px;
+    text-decoration: none;
+    color: #99c0e3;
+    text-align: center;
+}
+
+.selected {
+    text-decoration: underline;
+    pointer-events: none;
+    animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.contentContainer {
+    margin: 10vh 30vh 0 30vh;
+    display: flex;
+}
+
+.content {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    color: #99c0e3;
+}
+
+.canada__image {
+    width: 300px;
+    height: 150px;
+    margin-left: 5vh;
+    margin-top: 17vh;
+}
+
+.rio92__image {
+    object-fit: none;
+    margin-right: 5vh;
+    margin-top: 2vh;
+}
